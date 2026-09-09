@@ -27,8 +27,21 @@ you never need to touch the HTML/CSS to update content.
 3. Save. Refresh the page — it's now on the site, no other changes needed.
 
 ### Adding a new project
-Same idea, inside `companyProjects` (no `link` field — these stay
-private) or `personalProjects` (can include a `link`).
+Copy an object inside `companyProjects` (no `link` field — these stay
+private) or `personalProjects` (can include a `link`):
+```js
+{
+  title: "Project name",
+  period: "2025",
+  bullets: [
+    "First point — what you built or the problem it solved.",
+    "Second point — an outcome, metric, or scope detail.",
+    "Add as many bullets as you need."
+  ],
+  stack: ["Tech", "Used", "Here"],
+  link: "https://github.com/you/repo"   // personal projects only
+}
+```
 
 ## Running it locally
 Just open `index.html` in a browser, or serve the folder:
