@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      <div class="sidebar-heading">
+        <p class="sidebar-name" id="sb-name">Your Name</p>
+        <p class="sidebar-title" id="sb-title">Software Engineer</p>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#work-projects">Work</a>
+        <a href="#personal-projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+      </nav>
+      <div class="sidebar-links" id="sb-links"></div>
+    </div>
+  </header>
+
+  <main class="content">
+
+    <section id="about" class="section about">
+      <h1 id="about-name">Your Name</h1>
+      <p class="tagline" id="about-tagline">Tagline goes here.</p>
+      <p class="meta-line" id="about-meta"></p>
+
+      <div class="degrees" id="degrees-list"></div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="timeline" id="experience-list"></div>
+    </section>
+
+    <section id="work-projects" class="section">
+      <h2>Projects at work</h2>
+      <p class="section-note">Built as part of my job. These live in private, company-owned repositories, so I've described the problem and outcome instead of linking code.</p>
+      <div class="project-list" id="work-projects-list"></div>
+    </section>
+
+    <section id="personal-projects" class="section">
+      <h2>Personal projects</h2>
+      <div class="project-list" id="personal-projects-list"></div>
+    </section>
+
+    <section id="certifications" class="section">
+      <h2>Certifications</h2>
+      <div class="cert-list" id="certifications-list"></div>
+    </section>
+
+    <footer class="footer">
+      <p id="footer-text"></p>
+    </footer>
+
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
